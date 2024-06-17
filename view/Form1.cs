@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projeto.modelos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -61,7 +62,9 @@ namespace Projeto
 
         private void buttonmultas_Click(object sender, EventArgs e)
         {
-
+            multas func = new multas();
+            func.Show();
+            this.Hide();
         }
     }
 }

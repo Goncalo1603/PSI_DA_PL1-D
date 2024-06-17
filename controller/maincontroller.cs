@@ -71,6 +71,13 @@ namespace Projeto.controller
                 db.SaveChanges();
             }
         }
-
+        
+        public List<multa> ObterMultas()
+        {
+            using (var db = new ProjetoContext())
+            {
+                return db.multas.ToList();
+            }
+        }
     }
 }

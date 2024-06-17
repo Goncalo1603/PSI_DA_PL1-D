@@ -31,7 +31,7 @@
             this.labelmultas = new System.Windows.Forms.Label();
             this.buttoncriarmulta = new System.Windows.Forms.Button();
             this.labelnomeCliente = new System.Windows.Forms.Label();
-            this.buttonatualizarCliente = new System.Windows.Forms.Button();
+            this.buttonsalvarMulta = new System.Windows.Forms.Button();
             this.buttonapagarMulta = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.numericUpDownmultaatraso = new System.Windows.Forms.NumericUpDown();
@@ -79,18 +79,18 @@
             this.labelnomeCliente.TabIndex = 2;
             this.labelnomeCliente.Text = "Tempo de Atraso";
             // 
-            // buttonatualizarCliente
+            // buttonsalvarMulta
             // 
-            this.buttonatualizarCliente.BackColor = System.Drawing.Color.Blue;
-            this.buttonatualizarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonatualizarCliente.Location = new System.Drawing.Point(490, 685);
-            this.buttonatualizarCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonatualizarCliente.Name = "buttonatualizarCliente";
-            this.buttonatualizarCliente.Size = new System.Drawing.Size(180, 54);
-            this.buttonatualizarCliente.TabIndex = 1;
-            this.buttonatualizarCliente.Text = "Salvar";
-            this.buttonatualizarCliente.UseVisualStyleBackColor = false;
-            this.buttonatualizarCliente.Click += new System.EventHandler(this.buttonatualizarCliente_Click);
+            this.buttonsalvarMulta.BackColor = System.Drawing.Color.Blue;
+            this.buttonsalvarMulta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonsalvarMulta.Location = new System.Drawing.Point(490, 685);
+            this.buttonsalvarMulta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonsalvarMulta.Name = "buttonsalvarMulta";
+            this.buttonsalvarMulta.Size = new System.Drawing.Size(180, 54);
+            this.buttonsalvarMulta.TabIndex = 1;
+            this.buttonsalvarMulta.Text = "Salvar";
+            this.buttonsalvarMulta.UseVisualStyleBackColor = false;
+            this.buttonsalvarMulta.Click += new System.EventHandler(this.buttonsalvarMulta_Click);
             // 
             // buttonapagarMulta
             // 
@@ -111,7 +111,7 @@
             this.groupBox1.Controls.Add(this.numericUpDowntempoatraso);
             this.groupBox1.Controls.Add(this.labelnifCliente);
             this.groupBox1.Controls.Add(this.labelnomeCliente);
-            this.groupBox1.Controls.Add(this.buttonatualizarCliente);
+            this.groupBox1.Controls.Add(this.buttonsalvarMulta);
             this.groupBox1.Controls.Add(this.buttonapagarMulta);
             this.groupBox1.Location = new System.Drawing.Point(294, 57);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -121,11 +121,18 @@
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Criar Multa";
+            this.groupBox1.Visible = false;
             // 
             // numericUpDownmultaatraso
             // 
+            this.numericUpDownmultaatraso.DecimalPlaces = 1;
             this.numericUpDownmultaatraso.Location = new System.Drawing.Point(460, 323);
             this.numericUpDownmultaatraso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.numericUpDownmultaatraso.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.numericUpDownmultaatraso.Name = "numericUpDownmultaatraso";
             this.numericUpDownmultaatraso.Size = new System.Drawing.Size(228, 26);
             this.numericUpDownmultaatraso.TabIndex = 5;
@@ -200,7 +207,7 @@
         private System.Windows.Forms.Label labelmultas;
         private System.Windows.Forms.Button buttoncriarmulta;
         private System.Windows.Forms.Label labelnomeCliente;
-        private System.Windows.Forms.Button buttonatualizarCliente;
+        private System.Windows.Forms.Button buttonsalvarMulta;
         private System.Windows.Forms.Button buttonapagarMulta;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label labelnifCliente;
