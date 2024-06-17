@@ -29,12 +29,13 @@ namespace Projeto.modelos
 
         }
 
-        private void buttonapagarCliente_Click(object sender, EventArgs e)
+
+        private void buttoncriarmulta_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void buttoncriarmulta_Click(object sender, EventArgs e)
+        private void buttonapagarMulta_Click(object sender, EventArgs e)
         {
 
         }

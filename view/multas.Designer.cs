@@ -32,7 +32,7 @@
             this.buttoncriarmulta = new System.Windows.Forms.Button();
             this.labelnomeCliente = new System.Windows.Forms.Label();
             this.buttonatualizarCliente = new System.Windows.Forms.Button();
-            this.buttonapagarCliente = new System.Windows.Forms.Button();
+            this.buttonapagarMulta = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.numericUpDownmultaatraso = new System.Windows.Forms.NumericUpDown();
             this.numericUpDowntempoatraso = new System.Windows.Forms.NumericUpDown();
@@ -92,18 +92,18 @@
             this.buttonatualizarCliente.UseVisualStyleBackColor = false;
             this.buttonatualizarCliente.Click += new System.EventHandler(this.buttonatualizarCliente_Click);
             // 
-            // buttonapagarCliente
+            // buttonapagarMulta
             // 
-            this.buttonapagarCliente.BackColor = System.Drawing.Color.Blue;
-            this.buttonapagarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonapagarCliente.Location = new System.Drawing.Point(490, 602);
-            this.buttonapagarCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.buttonapagarCliente.Name = "buttonapagarCliente";
-            this.buttonapagarCliente.Size = new System.Drawing.Size(180, 54);
-            this.buttonapagarCliente.TabIndex = 0;
-            this.buttonapagarCliente.Text = "Apagar";
-            this.buttonapagarCliente.UseVisualStyleBackColor = false;
-            this.buttonapagarCliente.Click += new System.EventHandler(this.buttonapagarCliente_Click);
+            this.buttonapagarMulta.BackColor = System.Drawing.Color.Blue;
+            this.buttonapagarMulta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonapagarMulta.Location = new System.Drawing.Point(490, 602);
+            this.buttonapagarMulta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonapagarMulta.Name = "buttonapagarMulta";
+            this.buttonapagarMulta.Size = new System.Drawing.Size(180, 54);
+            this.buttonapagarMulta.TabIndex = 0;
+            this.buttonapagarMulta.Text = "Apagar";
+            this.buttonapagarMulta.UseVisualStyleBackColor = false;
+            this.buttonapagarMulta.Click += new System.EventHandler(this.buttonapagarMulta_Click);
             // 
             // groupBox1
             // 
@@ -112,7 +112,7 @@
             this.groupBox1.Controls.Add(this.labelnifCliente);
             this.groupBox1.Controls.Add(this.labelnomeCliente);
             this.groupBox1.Controls.Add(this.buttonatualizarCliente);
-            this.groupBox1.Controls.Add(this.buttonapagarCliente);
+            this.groupBox1.Controls.Add(this.buttonapagarMulta);
             this.groupBox1.Location = new System.Drawing.Point(294, 57);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
@@ -201,7 +201,7 @@
         private System.Windows.Forms.Button buttoncriarmulta;
         private System.Windows.Forms.Label labelnomeCliente;
         private System.Windows.Forms.Button buttonatualizarCliente;
-        private System.Windows.Forms.Button buttonapagarCliente;
+        private System.Windows.Forms.Button buttonapagarMulta;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label labelnifCliente;
         private System.Windows.Forms.ListBox listBoxmultas;
