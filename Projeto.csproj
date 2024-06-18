@@ -76,6 +76,7 @@
     <Compile Include="controller\clientecontroller.cs" />
     <Compile Include="controller\maincontroller.cs" />
     <Compile Include="controller\funcionariocontroller.cs" />
+    <Compile Include="controller\menuscontroller.cs" />
     <Compile Include="controller\multascontroller.cs" />
     <Compile Include="view\cliente.cs">
       <SubType>Form</SubType>
@@ -108,11 +109,11 @@
     <Compile Include="modelos\itemfatura.cs" />
     <Compile Include="modelos\menu.cs" />
     <Compile Include="modelos\multa.cs" />
-    <Compile Include="view\menu.cs">
+    <Compile Include="view\menus.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\menu.Designer.cs">
-      <DependentUpon>menu.cs</DependentUpon>
+    <Compile Include="view\menus.Designer.cs">
+      <DependentUpon>menus.cs</DependentUpon>
     </Compile>
     <Compile Include="view\multas.cs">
       <SubType>Form</SubType>
@@ -151,8 +152,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="view\menu.resx">
-      <DependentUpon>menu.cs</DependentUpon>
+    <EmbeddedResource Include="view\menus.resx">
+      <DependentUpon>menus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\multas.resx">
       <DependentUpon>multas.cs</DependentUpon>

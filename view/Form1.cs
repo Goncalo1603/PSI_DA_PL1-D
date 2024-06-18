@@ -1,4 +1,5 @@
 ﻿using Projeto.modelos;
+using Projeto.view;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,7 +58,9 @@ namespace Projeto
 
         private void buttonmenu_Click(object sender, EventArgs e)
         {
-
+            menus func = new menus();
+            func.Show();
+            this.Hide();
         }
 
         private void buttonmultas_Click(object sender, EventArgs e)

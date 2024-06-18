@@ -1,6 +1,6 @@
 ﻿namespace Projeto.view
 {
-    partial class menu
+    partial class menus
     {
         /// <summary>
         /// Required designer variable.
@@ -49,16 +49,18 @@
             // 
             this.monthCalendar1.Location = new System.Drawing.Point(17, 28);
             this.monthCalendar1.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
+            this.monthCalendar1.MaxSelectionCount = 1;
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+            this.monthCalendar1.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateSelected);
             // 
             // Alterarpratoseextras
             // 
             this.Alterarpratoseextras.BackColor = System.Drawing.Color.Blue;
             this.Alterarpratoseextras.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Alterarpratoseextras.Location = new System.Drawing.Point(16, 254);
-            this.Alterarpratoseextras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Alterarpratoseextras.Margin = new System.Windows.Forms.Padding(4);
             this.Alterarpratoseextras.Name = "Alterarpratoseextras";
             this.Alterarpratoseextras.Size = new System.Drawing.Size(303, 49);
             this.Alterarpratoseextras.TabIndex = 1;
@@ -73,9 +75,9 @@
             this.groupBoxmenudodia.Controls.Add(this.labelpratos);
             this.groupBoxmenudodia.Controls.Add(this.listBoxpratos);
             this.groupBoxmenudodia.Location = new System.Drawing.Point(436, 28);
-            this.groupBoxmenudodia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxmenudodia.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxmenudodia.Name = "groupBoxmenudodia";
-            this.groupBoxmenudodia.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxmenudodia.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxmenudodia.Size = new System.Drawing.Size(800, 274);
             this.groupBoxmenudodia.TabIndex = 2;
             this.groupBoxmenudodia.TabStop = false;
@@ -98,7 +100,7 @@
             this.listBoxextras.FormattingEnabled = true;
             this.listBoxextras.ItemHeight = 16;
             this.listBoxextras.Location = new System.Drawing.Point(469, 54);
-            this.listBoxextras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxextras.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxextras.Name = "listBoxextras";
             this.listBoxextras.Size = new System.Drawing.Size(220, 212);
             this.listBoxextras.TabIndex = 2;
@@ -119,7 +121,7 @@
             this.listBoxpratos.FormattingEnabled = true;
             this.listBoxpratos.ItemHeight = 16;
             this.listBoxpratos.Location = new System.Drawing.Point(47, 54);
-            this.listBoxpratos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxpratos.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxpratos.Name = "listBoxpratos";
             this.listBoxpratos.Size = new System.Drawing.Size(220, 212);
             this.listBoxpratos.TabIndex = 0;
@@ -132,9 +134,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(17, 342);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1259, 338);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
@@ -146,7 +148,7 @@
             this.buttonsalvar.BackColor = System.Drawing.Color.Blue;
             this.buttonsalvar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonsalvar.Location = new System.Drawing.Point(857, 140);
-            this.buttonsalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonsalvar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonsalvar.Name = "buttonsalvar";
             this.buttonsalvar.Size = new System.Drawing.Size(303, 49);
             this.buttonsalvar.TabIndex = 4;
@@ -159,7 +161,7 @@
             this.listBox2.FormattingEnabled = true;
             this.listBox2.ItemHeight = 16;
             this.listBox2.Location = new System.Drawing.Point(469, 74);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox2.Margin = new System.Windows.Forms.Padding(4);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(220, 212);
             this.listBox2.TabIndex = 5;
@@ -169,7 +171,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(47, 74);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(220, 212);
             this.listBox1.TabIndex = 4;
@@ -196,7 +198,7 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Pratos";
             // 
-            // menu
+            // menus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -205,8 +207,8 @@
             this.Controls.Add(this.groupBoxmenudodia);
             this.Controls.Add(this.Alterarpratoseextras);
             this.Controls.Add(this.monthCalendar1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "menu";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "menus";
             this.Text = "menu";
             this.groupBoxmenudodia.ResumeLayout(false);
             this.groupBoxmenudodia.PerformLayout();

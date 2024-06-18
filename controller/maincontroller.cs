@@ -88,6 +88,20 @@ namespace Projeto.controller
                 db.SaveChanges();
             }
         }
-
+        public List<menu> ObterMenus()
+        {
+            using (var db = new ProjetoContext())
+            {
+                return db.menus.ToList();
+            }
+        }
+        public void PopulatePratosCollection(menu menu)
+        {
+            using (var db = new ProjetoContext())
+            {
+                var pratos = db.pratos.Where(p => p.id == menu.id).ToList();
+                menu.pratos = pratos;
+            }
+        }
     }
 }
