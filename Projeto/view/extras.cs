@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Projeto.modelos
+namespace Projeto.view
 {
-    public partial class multas : Form
+    public partial class extras : Form
     {
-        public multas()
+        public extras()
         {
             InitializeComponent();
         }
 
-        private void buttonapagarCliente_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

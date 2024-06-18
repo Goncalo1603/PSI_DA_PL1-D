@@ -57,7 +57,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -71,8 +73,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controller\extracontroller.cs" />
     <Compile Include="controller\maincontroller.cs" />
     <Compile Include="controller\funcionariocontroller.cs" />
+    <Compile Include="controller\pratocontroller.cs" />
     <Compile Include="view\cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +93,18 @@
     </Compile>
     <Compile Include="view\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\extras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\extras.Designer.cs">
+      <DependentUpon>extras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\pratos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\pratos.Designer.cs">
+      <DependentUpon>pratos.cs</DependentUpon>
     </Compile>
     <Compile Include="view\funcionarios.cs">
       <SubType>Form</SubType>
@@ -135,6 +151,9 @@
     <EmbeddedResource Include="view\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\extras.resx">
+      <DependentUpon>extras.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\funcionarios.resx">
       <DependentUpon>funcionarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\multas.resx">
       <DependentUpon>multas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\pratos.resx">
+      <DependentUpon>pratos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\reservas.resx">
       <DependentUpon>reservas.cs</DependentUpon>

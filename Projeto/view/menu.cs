@@ -16,5 +16,10 @@ namespace Projeto.view
         {
             InitializeComponent();
         }
+
+        private void Alterarpratoseextras_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
