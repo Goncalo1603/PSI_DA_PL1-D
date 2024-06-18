@@ -48,10 +48,10 @@
             // 
             this.labelmultas.AutoSize = true;
             this.labelmultas.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmultas.Location = new System.Drawing.Point(18, 57);
+            this.labelmultas.Location = new System.Drawing.Point(16, 46);
             this.labelmultas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelmultas.Name = "labelmultas";
-            this.labelmultas.Size = new System.Drawing.Size(123, 40);
+            this.labelmultas.Size = new System.Drawing.Size(103, 36);
             this.labelmultas.TabIndex = 10;
             this.labelmultas.Text = "Multas";
             // 
@@ -59,10 +59,10 @@
             // 
             this.buttoncriarmulta.BackColor = System.Drawing.Color.Blue;
             this.buttoncriarmulta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttoncriarmulta.Location = new System.Drawing.Point(26, 742);
-            this.buttoncriarmulta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttoncriarmulta.Location = new System.Drawing.Point(23, 594);
+            this.buttoncriarmulta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttoncriarmulta.Name = "buttoncriarmulta";
-            this.buttoncriarmulta.Size = new System.Drawing.Size(225, 71);
+            this.buttoncriarmulta.Size = new System.Drawing.Size(200, 57);
             this.buttoncriarmulta.TabIndex = 12;
             this.buttoncriarmulta.Text = "Criar Multa";
             this.buttoncriarmulta.UseVisualStyleBackColor = false;
@@ -72,10 +72,10 @@
             // 
             this.labelnomeCliente.AutoSize = true;
             this.labelnomeCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelnomeCliente.Location = new System.Drawing.Point(454, 123);
+            this.labelnomeCliente.Location = new System.Drawing.Point(404, 98);
             this.labelnomeCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelnomeCliente.Name = "labelnomeCliente";
-            this.labelnomeCliente.Size = new System.Drawing.Size(238, 33);
+            this.labelnomeCliente.Size = new System.Drawing.Size(199, 29);
             this.labelnomeCliente.TabIndex = 2;
             this.labelnomeCliente.Text = "Tempo de Atraso";
             // 
@@ -83,10 +83,10 @@
             // 
             this.buttonsalvarMulta.BackColor = System.Drawing.Color.Blue;
             this.buttonsalvarMulta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonsalvarMulta.Location = new System.Drawing.Point(490, 685);
-            this.buttonsalvarMulta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonsalvarMulta.Location = new System.Drawing.Point(436, 548);
+            this.buttonsalvarMulta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonsalvarMulta.Name = "buttonsalvarMulta";
-            this.buttonsalvarMulta.Size = new System.Drawing.Size(180, 54);
+            this.buttonsalvarMulta.Size = new System.Drawing.Size(160, 43);
             this.buttonsalvarMulta.TabIndex = 1;
             this.buttonsalvarMulta.Text = "Salvar";
             this.buttonsalvarMulta.UseVisualStyleBackColor = false;
@@ -96,10 +96,10 @@
             // 
             this.buttonapagarMulta.BackColor = System.Drawing.Color.Blue;
             this.buttonapagarMulta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonapagarMulta.Location = new System.Drawing.Point(490, 602);
-            this.buttonapagarMulta.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonapagarMulta.Location = new System.Drawing.Point(436, 482);
+            this.buttonapagarMulta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonapagarMulta.Name = "buttonapagarMulta";
-            this.buttonapagarMulta.Size = new System.Drawing.Size(180, 54);
+            this.buttonapagarMulta.Size = new System.Drawing.Size(160, 43);
             this.buttonapagarMulta.TabIndex = 0;
             this.buttonapagarMulta.Text = "Apagar";
             this.buttonapagarMulta.UseVisualStyleBackColor = false;
@@ -113,11 +113,11 @@
             this.groupBox1.Controls.Add(this.labelnomeCliente);
             this.groupBox1.Controls.Add(this.buttonsalvarMulta);
             this.groupBox1.Controls.Add(this.buttonapagarMulta);
-            this.groupBox1.Location = new System.Drawing.Point(294, 57);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Location = new System.Drawing.Point(261, 46);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(1142, 755);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1015, 604);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Criar Multa";
@@ -126,54 +126,55 @@
             // numericUpDownmultaatraso
             // 
             this.numericUpDownmultaatraso.DecimalPlaces = 1;
-            this.numericUpDownmultaatraso.Location = new System.Drawing.Point(460, 323);
-            this.numericUpDownmultaatraso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.numericUpDownmultaatraso.Location = new System.Drawing.Point(409, 258);
+            this.numericUpDownmultaatraso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDownmultaatraso.Maximum = new decimal(new int[] {
             100000,
             0,
             0,
             0});
             this.numericUpDownmultaatraso.Name = "numericUpDownmultaatraso";
-            this.numericUpDownmultaatraso.Size = new System.Drawing.Size(228, 26);
+            this.numericUpDownmultaatraso.Size = new System.Drawing.Size(203, 22);
             this.numericUpDownmultaatraso.TabIndex = 5;
             // 
             // numericUpDowntempoatraso
             // 
-            this.numericUpDowntempoatraso.Location = new System.Drawing.Point(460, 192);
-            this.numericUpDowntempoatraso.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.numericUpDowntempoatraso.Location = new System.Drawing.Point(409, 154);
+            this.numericUpDowntempoatraso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numericUpDowntempoatraso.Name = "numericUpDowntempoatraso";
-            this.numericUpDowntempoatraso.Size = new System.Drawing.Size(228, 26);
+            this.numericUpDowntempoatraso.Size = new System.Drawing.Size(203, 22);
             this.numericUpDowntempoatraso.TabIndex = 4;
             // 
             // labelnifCliente
             // 
             this.labelnifCliente.AutoSize = true;
             this.labelnifCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelnifCliente.Location = new System.Drawing.Point(460, 258);
+            this.labelnifCliente.Location = new System.Drawing.Point(409, 206);
             this.labelnifCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelnifCliente.Name = "labelnifCliente";
-            this.labelnifCliente.Size = new System.Drawing.Size(238, 33);
+            this.labelnifCliente.Size = new System.Drawing.Size(197, 29);
             this.labelnifCliente.TabIndex = 3;
             this.labelnifCliente.Text = "Multa pelo atraso";
             // 
             // listBoxmultas
             // 
             this.listBoxmultas.FormattingEnabled = true;
-            this.listBoxmultas.ItemHeight = 20;
-            this.listBoxmultas.Location = new System.Drawing.Point(26, 106);
-            this.listBoxmultas.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBoxmultas.ItemHeight = 16;
+            this.listBoxmultas.Location = new System.Drawing.Point(23, 85);
+            this.listBoxmultas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxmultas.Name = "listBoxmultas";
-            this.listBoxmultas.Size = new System.Drawing.Size(223, 604);
+            this.listBoxmultas.Size = new System.Drawing.Size(199, 484);
             this.listBoxmultas.TabIndex = 11;
+            this.listBoxmultas.SelectedIndexChanged += new System.EventHandler(this.listBoxmultas_SelectedIndexChanged);
             // 
             // buttonvoltar
             // 
             this.buttonvoltar.BackColor = System.Drawing.Color.Blue;
             this.buttonvoltar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonvoltar.Location = new System.Drawing.Point(26, 14);
-            this.buttonvoltar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonvoltar.Location = new System.Drawing.Point(23, 11);
+            this.buttonvoltar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonvoltar.Name = "buttonvoltar";
-            this.buttonvoltar.Size = new System.Drawing.Size(225, 34);
+            this.buttonvoltar.Size = new System.Drawing.Size(200, 27);
             this.buttonvoltar.TabIndex = 14;
             this.buttonvoltar.Text = "Voltar";
             this.buttonvoltar.UseVisualStyleBackColor = false;
@@ -181,15 +182,15 @@
             // 
             // multas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1454, 869);
+            this.ClientSize = new System.Drawing.Size(1292, 695);
             this.Controls.Add(this.buttonvoltar);
             this.Controls.Add(this.labelmultas);
             this.Controls.Add(this.buttoncriarmulta);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listBoxmultas);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "multas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "multas";

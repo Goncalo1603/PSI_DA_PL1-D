@@ -26,6 +26,10 @@ namespace Projeto.controller
 
             _mainController.InserirMulta(multa);
         }
+        public void RemoverMulta(multa multa) 
+        {
+            _mainController.RemoverMulta(multa);
+        }
 
     }
 

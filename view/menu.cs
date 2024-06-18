@@ -16,5 +16,20 @@ namespace Projeto.view
         {
             InitializeComponent();
         }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            
+        }
+
+        private void Alterarpratoseextras_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonsalvar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

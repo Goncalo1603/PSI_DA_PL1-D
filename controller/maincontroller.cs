@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace Projeto.controller
@@ -79,5 +80,14 @@ namespace Projeto.controller
                 return db.multas.ToList();
             }
         }
+        public void RemoverMulta(multa multa)
+        {
+            using (var db = new ProjetoContext())
+            {
+                db.Entry(multa).State = EntityState.Deleted; 
+                db.SaveChanges();
+            }
+        }
+
     }
 }

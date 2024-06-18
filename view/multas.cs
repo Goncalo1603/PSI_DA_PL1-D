@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Projeto.modelos
 {
@@ -42,7 +43,26 @@ namespace Projeto.modelos
 
         private void buttonapagarMulta_Click(object sender, EventArgs e)
         {
+            if (listBoxmultas.SelectedItem != null)
+            {
+                string selectedMulta = listBoxmultas.SelectedItem.ToString();
+                string[] multaDetails = selectedMulta.Split('-');
 
+                float valor = Convert.ToSingle(multaDetails[0].Trim());
+
+                multa multa = _mainController.ObterMultas().FirstOrDefault(f => f.valor == valor);
+
+                if (selectedMulta != null)
+                {
+                    _mainController.RemoverMulta(multa);
+                    MessageBox.Show("Multa removida com successo!");
+                    CarregarMultas();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nenhuma mula selecionada para remover.");
+            }
         }
 
         private void buttonsalvarMulta_Click(object sender, EventArgs e)
@@ -78,6 +98,27 @@ namespace Projeto.modelos
             catch (Exception ex)
             {
                 MessageBox.Show($"Erro ao carregar multas: {ex.Message}");
+            }
+        }
+
+        private void listBoxmultas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBoxmultas.SelectedItem != null)
+            {
+                string selectedMulta = listBoxmultas.SelectedItem.ToString();
+                string[] multaDetails = selectedMulta.Split('-');
+
+                float valor = Convert.ToSingle(multaDetails[0].Trim());
+
+                multa multa = _mainController.ObterMultas().FirstOrDefault(f => f.valor == valor);
+
+                // Exibir os detalhes da multa na GroupBox
+                if (multa != null)
+                {
+                    groupBox1.Visible = true;
+                    numericUpDownmultaatraso.Value = (decimal)multa.valor;
+                    numericUpDowntempoatraso.Value = (decimal)multa.num_horas;
+                }
             }
         }
     }
