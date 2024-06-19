@@ -24,8 +24,13 @@ namespace Projeto.controller
         {
                 using (var context = new ProjetoContext())
                 {
-                        context.pratos.Add(prato);
-                        context.SaveChanges();
+                        
+                        if(prato.ativo=="Sim" || prato.ativo=="Não")
+                        {
+                            context.pratos.Add(prato);
+                            context.SaveChanges();
+                        }
+                        
                 }
         }
 
@@ -50,5 +55,17 @@ namespace Projeto.controller
                         }
                 }
         }
+
+        /*private void CarregarPratos()
+        {
+            List<prato> pratos = _pratocontroller.GetPratos();
+
+            listBoxPratos.Items.Clear();
+
+            foreach (prato prato in pratos)
+            {
+                listBoxPratos.Items.Add($"{prato.descricao} - {prato.tipo} - {prato.ativo}");
+            }
+        }*/
     }
 }

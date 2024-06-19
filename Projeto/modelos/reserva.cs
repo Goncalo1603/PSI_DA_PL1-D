@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projeto.modelos
 {
-    public class reserva
+    public class Reserva
     {
         public int id { get; set; }
         public cliente cliente { get; set; } // uma reserva pertence a 1 cliente

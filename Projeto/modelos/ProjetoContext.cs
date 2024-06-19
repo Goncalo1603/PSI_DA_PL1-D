@@ -19,7 +19,7 @@ namespace Projeto.modelos
         public DbSet<estudante> estudantes { get; set; }
         public DbSet<professor> professores { get; set;}
         public DbSet<multa>multas {  get; set; }
-        public DbSet<reserva>reservas {  get; set; }
+        public DbSet<Reserva>reservas {  get; set; }
         public DbSet<prato> pratos {  get; set; }
         public DbSet<extra>extras { get; set; }
         public DbSet<menu>menus {  get; set; }

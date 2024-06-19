@@ -14,7 +14,7 @@ using System.Runtime.Remoting.Contexts;
 
 namespace Projeto.controller
 {
-    internal class extracontroller
+    internal class ExtraController
     {
         public List<extra> GetAllExtras()
         {
@@ -53,6 +53,18 @@ namespace Projeto.controller
                     context.SaveChanges();
                 }
             }
-         }
+        }
+
+        /*private void CarregarExtras()
+        {
+            List<extra> extrass = _extracontroller.GetExtras();
+
+            listBoxExtras.Items.Clear();
+
+            foreach (extra extra in extras)
+            {
+                listBoxExtras.Items.Add($"{extra.descricao} - {extra.preco} - {extra.ativo}");
+            }
+        }*/
     }
 }

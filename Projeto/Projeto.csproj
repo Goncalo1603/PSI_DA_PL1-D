@@ -77,6 +77,7 @@
     <Compile Include="controller\maincontroller.cs" />
     <Compile Include="controller\funcionariocontroller.cs" />
     <Compile Include="controller\pratocontroller.cs" />
+    <Compile Include="controller\reservacontroller.cs" />
     <Compile Include="view\cliente.cs">
       <SubType>Form</SubType>
     </Compile>

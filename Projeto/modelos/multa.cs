@@ -11,11 +11,11 @@ namespace Projeto.modelos
         public int id { get; set; }
         public float valor {  get; set; }
         public float num_horas { get; set; }
-        public List<reserva>reservas { get; set; } //uma multa pode ter varias reservas
+        public List<Reserva>reservas { get; set; } //uma multa pode ter varias reservas
 
         public multa()
         {
-            reservas = new List<reserva>();
+            reservas = new List<Reserva>();
         }
     }
 }

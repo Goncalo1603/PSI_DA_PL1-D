@@ -12,12 +12,12 @@ namespace Projeto.modelos
         public string descricao {  get; set; }
         public float preco {  get; set; }
         public string ativo { get; set; }
-        public List<reserva> reservas { get; set; } //um extra pode estar em varias reservas
+        public List<Reserva> reservas { get; set; } //um extra pode estar em varias reservas
         public List<menu>menus { get; set; } // 1 extra pode estar em  varios menus
 
         public extra()
         {
-            reservas = new List<reserva>();
+            reservas = new List<Reserva>();
             menus = new List<menu>();
         }
 

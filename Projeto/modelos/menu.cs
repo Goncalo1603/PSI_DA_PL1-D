@@ -13,7 +13,7 @@ namespace Projeto.modelos
         public int qtd_disponvel {  get; set; }
         public float preco_estudante {  get; set; }
         public float preco_professor { get; set; }
-        public List<reserva> reservas {  get; set; } // 1 menu pode ter varias reservas
+        public List<Reserva> reservas {  get; set; } // 1 menu pode ter varias reservas
         public List<prato>pratos { get; set; } // 1 menu pode ter varios pratos
         public List<extra>extras {  get; set; } //1 menu pode ter varios extras
         public List<fatura>faturas { get; set; } //1 menu pode ter varias faturas
@@ -21,7 +21,7 @@ namespace Projeto.modelos
 
         public menu()
         {
-            reservas = new List<reserva>();
+            reservas = new List<Reserva>();
             pratos = new List<prato>();
             extras = new List<extra>();
             faturas = new List<fatura>();
