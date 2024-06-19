@@ -24,7 +24,8 @@ namespace Projeto.modelos
         public DbSet<extra>extras { get; set; }
         public DbSet<menu>menus {  get; set; }
         public DbSet<fatura>faturas {  get; set; }
-        public DbSet <itemfatura>itemfaturas { get; set; }
+        public DbSet<itemfatura>itemfaturas { get; set; }
+        public DbSet<pratomenu> pratomenus { get; set; }
 
         public ProjetoContext() : base("name=ProjetoContext")
         {

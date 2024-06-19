@@ -95,6 +95,15 @@ namespace Projeto.controller
                 return db.menus.ToList();
             }
         }
+        public void InserirMenu(menu menu)
+        {
+            using (var db = new ProjetoContext())
+            {
+                db.menus.Add(menu);
+                db.SaveChanges();
+            }
+        }
+        /*
         public void PopulatePratosCollection(menu menu)
         {
             using (var db = new ProjetoContext())
@@ -103,5 +112,6 @@ namespace Projeto.controller
                 menu.pratos = pratos;
             }
         }
+        */
     }
 }

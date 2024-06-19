@@ -39,6 +39,8 @@ namespace Projeto.view
 
                     List<menu> menus = _mainController.ObterMenus();
                     menu menu = _mainController.ObterMenus().FirstOrDefault(m => m.data_hora == data_hora);
+                    List<prato> pratos = _menusController.ObterPratosPorData(data_hora);
+
                     listBoxpratos.Items.Clear();
                      
 
@@ -46,7 +48,7 @@ namespace Projeto.view
                         {
                             if (menu.pratos.Count > 0)
                             {
-                                foreach (var prato in menu.pratos)
+                                foreach (prato prato in menu.pratos)
                                 {
                                     if (!string.IsNullOrEmpty(prato.descricao))
                                     {
@@ -85,21 +87,48 @@ namespace Projeto.view
 
         private void Alterarpratoseextras_Click(object sender, EventArgs e)
         {
+            List<prato> pratos = _menusController.GetAllPratos();
+            List<extra> extras = _menusController.GetAllExtras();
+            listBox1.Items.Clear();
+            listBox2.Items.Clear();
+            foreach (prato prato in pratos)
+            {
+                listBox1.Items.Add(prato.descricao);
+            }
+            foreach (extra extra in extras)
+            {
+                listBox2.Items.Add(extra.descricao);
+            }
 
+            groupBox1.Visible = true;
         }
 
         private void buttonsalvar_Click(object sender, EventArgs e)
         {
+            DateTime data_hora = monthCalendar1.SelectionRange.Start;
 
+            List<prato> prato = listBox1.SelectedItem as List<prato>;
+            List<extra> extra = listBox2.SelectedItem as List<extra>;
+
+            _menusController.AdicionarMenu(prato, data_hora, extra);
+            MessageBox.Show("Menu adiconado com sucesso");
+            CarregarMenus();
+            groupBox1.Visible = false;
         }
 
         private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
-        {
-            
+        {         
             CarregarMenus();
             
             
           
+        }
+
+        private void buttonvoltar_Click(object sender, EventArgs e)
+        {
+            Form1 principal = new Form1();
+            principal.Show();
+            this.Hide();
         }
     }
 }

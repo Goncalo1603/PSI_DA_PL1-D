@@ -41,6 +41,7 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.buttonvoltar = new System.Windows.Forms.Button();
             this.groupBoxmenudodia.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -197,11 +198,25 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Pratos";
             // 
+            // buttonvoltar
+            // 
+            this.buttonvoltar.BackColor = System.Drawing.Color.Blue;
+            this.buttonvoltar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonvoltar.Location = new System.Drawing.Point(51, 0);
+            this.buttonvoltar.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonvoltar.Name = "buttonvoltar";
+            this.buttonvoltar.Size = new System.Drawing.Size(200, 27);
+            this.buttonvoltar.TabIndex = 15;
+            this.buttonvoltar.Text = "Voltar";
+            this.buttonvoltar.UseVisualStyleBackColor = false;
+            this.buttonvoltar.Click += new System.EventHandler(this.buttonvoltar_Click);
+            // 
             // menus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1292, 695);
+            this.Controls.Add(this.buttonvoltar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxmenudodia);
             this.Controls.Add(this.Alterarpratoseextras);
@@ -232,5 +247,6 @@
         private System.Windows.Forms.Button buttonsalvar;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button buttonvoltar;
     }
 }
