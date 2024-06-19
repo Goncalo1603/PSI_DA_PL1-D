@@ -10,11 +10,15 @@ namespace Projeto.controller
     internal class menuscontroller
     {
         private readonly maincontroller _mainController;
+        private List<menu> _menus;
 
         public menuscontroller(maincontroller mainController)
         {
             this._mainController = mainController;
+
+            _menus = new List<menu>();
         }
+        
 
         public List<prato> ObterPratosPorData(DateTime date)
         {
@@ -37,6 +41,16 @@ namespace Projeto.controller
                 return context.extras.ToList();
             }
         }
+        public List<menu> GetMenus() 
+        { 
+            return _menus;
+        }
+        public void AdicionarMenu(menu menu) 
+        {
+            _menus.Add(menu);
+        }
+
+        /*
         public void AdicionarMenu(List<prato> prato, DateTime data, List<extra> extra)
         {
             var menu = new menu
@@ -48,6 +62,7 @@ namespace Projeto.controller
 
             _mainController.InserirMenu(menu);
         }
+        */
 
     }
 }

@@ -31,6 +31,32 @@ namespace Projeto.view
         }
         private void CarregarMenus()
         {
+            List<menu> menus = _menusController.GetMenus(); 
+            listBoxpratos.Items.Clear();
+            listBoxextras.Items.Clear();
+            if (menus.Count > 0)
+            {
+                foreach (menu menu in menus)
+                {
+                    listBoxpratos.Items.Add(menu.pratos);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Não há menu");
+            }
+            
+
+
+
+
+
+
+
+
+
+
+            /*
             try
             {
                 if (_mainController != null)
@@ -79,6 +105,7 @@ namespace Projeto.view
             {
                 MessageBox.Show($"Erro ao carregar menus: {ex.Message}");
             }
+            */
         }
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
@@ -110,7 +137,7 @@ namespace Projeto.view
             List<prato> prato = listBox1.SelectedItem as List<prato>;
             List<extra> extra = listBox2.SelectedItem as List<extra>;
 
-            _menusController.AdicionarMenu(prato, data_hora, extra);
+            //_menusController.AdicionarMenu();
             MessageBox.Show("Menu adiconado com sucesso");
             CarregarMenus();
             groupBox1.Visible = false;
