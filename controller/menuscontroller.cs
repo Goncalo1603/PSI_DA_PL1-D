@@ -1,30 +1,54 @@
 ﻿using Projeto.modelos;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Projeto.controller
 {
     internal class menuscontroller
     {
         private readonly maincontroller _mainController;
-        private List<menu> _menus;
 
         public menuscontroller(maincontroller mainController)
         {
             this._mainController = mainController;
-
-            _menus = new List<menu>();
         }
-        
+
 
         public List<prato> ObterPratosPorData(DateTime date)
         {
-            var menus = _mainController.ObterMenus();
-            var menuForDate = menus.SingleOrDefault(m => m.data_hora.Date == date.Date);
-            return menuForDate?.pratos;
+            using (var context = new ProjetoContext())
+            {
+                var menuForDate = context.menus
+                    .Include("pratos")
+                    .Include("extras")
+                    .SingleOrDefault(m => DbFunctions.TruncateTime(m.data_hora) == DbFunctions.TruncateTime(date));
+
+                return menuForDate?.pratos ?? new List<prato>();
+            }
+        }
+
+        public List<extra> ObterExtrasPorData(DateTime date)
+        {
+            using (var context = new ProjetoContext())
+            {
+                var menuForDate = context.menus
+                    .Include("extras")
+                    .Include("pratos")
+                    .SingleOrDefault(m => DbFunctions.TruncateTime(m.data_hora) == DbFunctions.TruncateTime(date));
+
+                return menuForDate?.extras ?? new List<extra>();
+            }
+        }
+        public List<menu> ObterMenusPorData(DateTime data)
+        {
+            using (var dbContext = new ProjetoContext())
+            {
+                return dbContext.menus
+                    .Where(m => m.data_hora == data)
+                    .ToList();
+            }
         }
 
         public List<prato> GetAllPratos()
@@ -34,6 +58,7 @@ namespace Projeto.controller
                 return context.pratos.ToList();
             }
         }
+
         public List<extra> GetAllExtras()
         {
             using (var context = new ProjetoContext())
@@ -41,28 +66,31 @@ namespace Projeto.controller
                 return context.extras.ToList();
             }
         }
-        public List<menu> GetMenus() 
-        { 
-            return _menus;
-        }
-        public void AdicionarMenu(menu menu) 
-        {
-            _menus.Add(menu);
-        }
 
-        /*
-        public void AdicionarMenu(List<prato> prato, DateTime data, List<extra> extra)
+        public void AdicionarMenu(List<int> pratoIds, DateTime data, List<int> extraIds, int quantidade, float precoAluno, float precoProf)
         {
-            var menu = new menu
+            using (var context = new ProjetoContext())
             {
-                pratos = prato,
-                data_hora = data,
-                extras = extra,
-            };
+                var pratos = context.pratos.Where(p => pratoIds.Contains(p.id)).ToList();
+                var extras = context.extras.Where(e => extraIds.Contains(e.id)).ToList();
 
-            _mainController.InserirMenu(menu);
+                var menu = new menu
+                {
+                    pratos = pratos,
+                    data_hora = data,
+                    extras = extras,
+                    qtd_disponvel = quantidade,
+                    preco_estudante = precoAluno,
+                    preco_professor = precoProf,
+                };
+
+                context.menus.Add(menu);
+                context.SaveChanges();
+            }
         }
-        */
-
+        public void RemoverMenu(menu menu)
+        {
+            _mainController.RemoverMenu(menu);
+        }
     }
 }

@@ -2,129 +2,120 @@
 using Projeto.modelos;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.Entity;
-using System.Drawing;
+using System.Data.Entity.ModelConfiguration.Configuration;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Projeto.view
 {
-    
     public partial class menus : Form
     {
         private menuscontroller _menusController;
         private maincontroller _mainController;
+
+        // Campos para armazenar pratos e extras
+        private List<prato> pratos;
+        private List<extra> extras;
+
         public menus()
         {
             InitializeComponent();
             InicializarControladores();
-            //CarregarMenus();
+            CarregarMenus();
         }
+
         private void InicializarControladores()
         {
             _mainController = new maincontroller();
             _menusController = new menuscontroller(_mainController);
         }
+
         private void CarregarMenus()
         {
-            List<menu> menus = _menusController.GetMenus(); 
-            listBoxpratos.Items.Clear();
-            listBoxextras.Items.Clear();
-            if (menus.Count > 0)
-            {
-                foreach (menu menu in menus)
-                {
-                    listBoxpratos.Items.Add(menu.pratos);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Não há menu");
-            }
-            
-
-
-
-
-
-
-
-
-
-
-            /*
             try
             {
-                if (_mainController != null)
+                DateTime data_hora = monthCalendar1.SelectionRange.Start;
+
+                pratos = _menusController.ObterPratosPorData(data_hora);
+                extras = _menusController.ObterExtrasPorData(data_hora);
+             
+                // Obter o menu com base na data
+                menu menu = _mainController.ObterMenus().FirstOrDefault(m => m.data_hora == data_hora);
+
+                // Exibir os detalhes do menu na GroupBox
+                if (menu != null)
                 {
-                    DateTime data_hora = monthCalendar1.SelectionRange.Start;
+                    labelQtdDisp.Text = menu.qtd_disponvel.ToString();
+                    labelPrecoAln.Text = menu.preco_estudante.ToString();
+                    labelPrecoProf.Text = menu.preco_professor.ToString();
+                }
+                else 
+                {
+                    labelQtdDisp.Text = "0";
+                    labelPrecoAln.Text = "0";
+                    labelPrecoProf.Text = "0";
+                }
 
-                    List<menu> menus = _mainController.ObterMenus();
-                    menu menu = _mainController.ObterMenus().FirstOrDefault(m => m.data_hora == data_hora);
-                    List<prato> pratos = _menusController.ObterPratosPorData(data_hora);
+                listBoxpratos.Items.Clear();
+                listBoxextras.Items.Clear();
 
-                    listBoxpratos.Items.Clear();
-                     
-
-                        if (menu != null)
-                        {
-                            if (menu.pratos.Count > 0)
-                            {
-                                foreach (prato prato in menu.pratos)
-                                {
-                                    if (!string.IsNullOrEmpty(prato.descricao))
-                                    {
-                                        listBoxpratos.Items.Add(prato.descricao);
-                                    }
-                                    else
-                                    {
-                                        MessageBox.Show("Descricao is null or empty for one or more pratos.");
-                                    }
-                                }
-                            }
-                            else
-                            {
-                            MessageBox.Show("Não há pratos");
-                            }
-                        }
-                        else
-                        {
-                        MessageBox.Show("Não há menu");
-                        }
+                if (pratos != null && pratos.Count > 0)
+                {
+                    foreach (var prato in pratos)
+                    {
+                        listBoxpratos.Items.Add(prato.descricao);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Main é null");
+                    MessageBox.Show("Não há pratos no menu.");
                 }
+
+                if (extras != null && extras.Count > 0)
+                {
+                    foreach (var extra in extras)
+                    {
+                        listBoxextras.Items.Add(extra.descricao);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Não há extras no menu.");
+                }
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Erro ao carregar menus: {ex.Message}");
             }
-            */
         }
+
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
-            
+            CarregarMenus();
         }
 
         private void Alterarpratoseextras_Click(object sender, EventArgs e)
         {
-            List<prato> pratos = _menusController.GetAllPratos();
-            List<extra> extras = _menusController.GetAllExtras();
+            pratos = _menusController.GetAllPratos();
+            extras = _menusController.GetAllExtras();
+
             listBox1.Items.Clear();
             listBox2.Items.Clear();
-            foreach (prato prato in pratos)
+
+            foreach (var prato in pratos)
             {
-                listBox1.Items.Add(prato.descricao);
+                listBox1.Items.Add(prato.descricao); // Add the description to the listBox
+                listBox1.DisplayMember = "descricao"; // Ensure the display member is set
+                listBox1.ValueMember = "id"; // Set the value member to the ID
             }
-            foreach (extra extra in extras)
+
+            foreach (var extra in extras)
             {
-                listBox2.Items.Add(extra.descricao);
+                listBox2.Items.Add(extra.descricao); // Add the description to the listBox
+                listBox2.DisplayMember = "descricao"; // Ensure the display member is set
+                listBox2.ValueMember = "id"; // Set the value member to the ID
             }
 
             groupBox1.Visible = true;
@@ -134,21 +125,41 @@ namespace Projeto.view
         {
             DateTime data_hora = monthCalendar1.SelectionRange.Start;
 
-            List<prato> prato = listBox1.SelectedItem as List<prato>;
-            List<extra> extra = listBox2.SelectedItem as List<extra>;
+            // Verifique se pratos e extras não são nulos antes de acessá-los
+            if (pratos != null && extras != null)
+            {
+                menu menu = _mainController.ObterMenus().FirstOrDefault(m => m.data_hora == data_hora);
 
-            //_menusController.AdicionarMenu();
-            MessageBox.Show("Menu adiconado com sucesso");
-            CarregarMenus();
-            groupBox1.Visible = false;
+                if (menu == null)
+                {
+                
+                    var pratoIds = listBox1.SelectedIndices.Cast<int>().Select(index => pratos[index].id).ToList();
+                    var extraIds = listBox2.SelectedIndices.Cast<int>().Select(index => extras[index].id).ToList();
+                    var quantidade = numericUpDownQtd.Value;
+                    var precoAluno = numericUpDownPrecoAl.Value;
+                    var precoProf = numericUpDownPrecoProf.Value;
+
+
+                    _menusController.AdicionarMenu(pratoIds, data_hora, extraIds, (int)quantidade, (float)precoAluno, (float)precoProf);
+                    MessageBox.Show("Menu adicionado com sucesso");
+                    CarregarMenus();
+                    groupBox1.Visible = false;
+                
+                }
+                else
+                {
+                    MessageBox.Show("Já existe menu neste dia");
+                }                
+            }
+            else
+            {
+                MessageBox.Show("Não foi possível salvar o menu. Os pratos ou extras não foram carregados corretamente.");
+            }
         }
 
         private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
-        {         
+        {
             CarregarMenus();
-            
-            
-          
         }
 
         private void buttonvoltar_Click(object sender, EventArgs e)
@@ -156,6 +167,21 @@ namespace Projeto.view
             Form1 principal = new Form1();
             principal.Show();
             this.Hide();
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            groupBox1.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime data_hora = monthCalendar1.SelectionRange.Start;
+            menu menu = _mainController.ObterMenus().FirstOrDefault(m => m.data_hora == data_hora);
+
+            _menusController.RemoverMenu(menu);
+            MessageBox.Show("Menu removido com successo!");
+            CarregarMenus();
         }
     }
 }

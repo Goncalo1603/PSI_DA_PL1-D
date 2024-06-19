@@ -90,9 +90,12 @@ namespace Projeto.controller
         }
         public List<menu> ObterMenus()
         {
-            using (var db = new ProjetoContext())
+            using (var context = new ProjetoContext())
             {
-                return db.menus.ToList();
+                return context.menus
+                    .Include(m => m.pratos)
+                    .Include(m => m.extras)
+                    .ToList();
             }
         }
         public void InserirMenu(menu menu)
@@ -103,6 +106,17 @@ namespace Projeto.controller
                 db.SaveChanges();
             }
         }
+        public void RemoverMenu(menu menu)
+        {
+            using (var db = new ProjetoContext())
+            {
+                db.Entry(menu).State = EntityState.Deleted;
+                db.SaveChanges();
+            }
+        }
+       
+
+        
         /*
         public void PopulatePratosCollection(menu menu)
         {
