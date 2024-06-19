@@ -82,7 +82,6 @@
             this.groupBoxmenudodia.TabIndex = 2;
             this.groupBoxmenudodia.TabStop = false;
             this.groupBoxmenudodia.Text = "Menu do dia";
-            this.groupBoxmenudodia.Visible = false;
             // 
             // label1
             // 

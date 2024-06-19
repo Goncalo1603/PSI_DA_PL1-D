@@ -19,7 +19,7 @@ namespace Projeto.controller
         public List<prato> ObterPratosPorData(DateTime date)
         {
             var menus = _mainController.ObterMenus();
-            var menuForDate = menus.FirstOrDefault(m => m.data_hora.Date == date.Date);
+            var menuForDate = menus.SingleOrDefault(m => m.data_hora.Date == date.Date);
             return menuForDate?.pratos;
         }
         

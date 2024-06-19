@@ -29,7 +29,55 @@ namespace Projeto.view
             _mainController = new maincontroller();
             _menusController = new menuscontroller(_mainController);
         }
+        private void CarregarMenus()
+        {
+            try
+            {
+                if (_mainController != null)
+                {
+                    DateTime data_hora = monthCalendar1.SelectionRange.Start;
 
+                    List<menu> menus = _mainController.ObterMenus();
+                    menu menu = _mainController.ObterMenus().FirstOrDefault(m => m.data_hora == data_hora);
+                    listBoxpratos.Items.Clear();
+                     
+
+                        if (menu != null)
+                        {
+                            if (menu.pratos.Count > 0)
+                            {
+                                foreach (var prato in menu.pratos)
+                                {
+                                    if (!string.IsNullOrEmpty(prato.descricao))
+                                    {
+                                        listBoxpratos.Items.Add(prato.descricao);
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Descricao is null or empty for one or more pratos.");
+                                    }
+                                }
+                            }
+                            else
+                            {
+                            MessageBox.Show("Não há pratos");
+                            }
+                        }
+                        else
+                        {
+                        MessageBox.Show("Não há menu");
+                        }
+                }
+                else
+                {
+                    MessageBox.Show("Main é null");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao carregar menus: {ex.Message}");
+            }
+        }
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
             
@@ -48,65 +96,10 @@ namespace Projeto.view
         private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e)
         {
             
-
-            DateTime data_hora = monthCalendar1.SelectionRange.Start;
-
-            menu menu = _mainController.ObterMenus().FirstOrDefault(m => m.data_hora == data_hora);
+            CarregarMenus();
             
-
-            if (menu != null) 
-            {
-                _mainController.PopulatePratosCollection(menu);
-                if (menu.pratos != null && menu.pratos.Count > 0)
-                {
-                    //listBoxpratos.Items.Clear();
-                    groupBoxmenudodia.Visible = true;
-                    listBoxpratos.DataSource = menu.pratos;
-                    listBoxpratos.DisplayMember = "descricao";
-                    /*
-                     foreach (var prato in menu.pratos)
-                    {
-                        if (!string.IsNullOrEmpty(prato.descricao))
-                        {        
-                            listBoxpratos.Items.Add(prato.descricao);
-                        }
-                        else
-                        {
-                            MessageBox.Show("Descricao is null or empty for one or more pratos.");
-                        }
-                    }
-                    */
-                }
-                else
-                {
-                    listBox1.Items.Clear();
-                    MessageBox.Show("No pratos found for the selected menu.");
-                }
-
-
-
-                /*
-                groupBoxmenudodia.Visible = true;
-               
-                listBoxpratos.Items.Clear();
-                foreach (var prato in menu.pratos) 
-                {
-                    listBoxpratos.Items.Add(prato.descricao);
-                }
-                
-                listBoxextras.Items.Clear();
-                listBoxextras.Items.Add(menu.extras);
-                
-                
-                
-                listBox1.DataSource = pratos;
-                listBox1.DisplayMember = "descricao";
-                */
-            }
-            else
-            {
-                MessageBox.Show("Não há menu neste dia");
-            }
+            
+          
         }
     }
 }
