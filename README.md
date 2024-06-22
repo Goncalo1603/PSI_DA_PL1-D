@@ -73,19 +73,27 @@ Para executar a aplicação, siga estes passos:
 <br />
 A aplicação dispõe de vários formulários para gerir diferentes entidades:
 <br />
+<br />
   Form1: O formulário principal para navegar para outros formulários
+  <br />
   <br />
   funcionarios: Para gerir funcionários
   <br />
+  <br />
   clientes: Para gerir clientes
+  <br />
   <br />
   extras: Para gerir extras
   <br />
+  <br />
   pratos: Para gerir pratos
+  <br />
   <br />
   multas: Para gerir multas
   <br />
+  <br />
   reservas: Para gerir reservas
+<br />
 <br />
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
@@ -106,7 +114,9 @@ Para executar a aplicação, siga estes passos:
 
 Projeto elaborado pelo grupo D da PL1, TeSP PSI Diurno 2023/2024
 <br />
+<br />
 Membros do grupo:
+<br />
 <br />
   Gonçalo Caldeira 2231687
   <br />
