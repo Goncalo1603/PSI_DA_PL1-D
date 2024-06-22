@@ -54,24 +54,23 @@ A finalidade deste projeto é desenvolver uma aplicação em C# no Visual Studio
 Para executar a aplicação, siga estes passos:
 
 ### Instalacao
-<br />
+
 1. Instale o Visual Studio em
    ```sh
    [https://visualstudio.microsoft.com/pt-br/downloads/](https://visualstudio.microsoft.com/pt-br/downloads/)
    ```
-   <br />
+
 3. Clone o repositório do GitHub para a sua máquina local
    ```sh
    https://github.com/Goncalo1603/PSI_DA_PL1-D
    ```
-   <br />
-
+<br />
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
 
 ## Uso
-
+<br />
 A aplicação dispõe de vários formulários para gerir diferentes entidades:
 <br />
   Form1: O formulário principal para navegar para outros formulários
@@ -87,13 +86,13 @@ A aplicação dispõe de vários formulários para gerir diferentes entidades:
   multas: Para gerir multas
   <br />
   reservas: Para gerir reservas
-
+<br />
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
 ## Execucao
-
+<br />
 Para executar a aplicação, siga estes passos:
 <br />
 1. Defina o projeto como projeto de inicialização no menu ao abrir o Visual Studio
