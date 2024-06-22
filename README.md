@@ -31,7 +31,7 @@
 </details>
 
 
-
+<br />
 ## Sobre o Projeto
 <br />
 A finalidade deste projeto é desenvolver uma aplicação em C# no Visual Studio para administrar uma cantina escolar, com o objetivo de aprimorar a gestão dos menus, reservas, saldo e faturação. O propósito principal é melhorar a administração de menus, como pratos e extras, com restrição de um prato por dia e até três extras, monitorizar o saldo dos clientes, ver os menus semanalmente, criar e administrar funcionários e clientes, e assegurar a persistência dos dados numa base de dados SQL.
@@ -40,7 +40,7 @@ A finalidade deste projeto é desenvolver uma aplicação em C# no Visual Studio
 <br />
 
 
-
+<br />
 ### Built With
 <br />
 [![Visual Studio][visualstudio.microsoft.com]][Visual Studio-url]
@@ -48,7 +48,7 @@ A finalidade deste projeto é desenvolver uma aplicação em C# no Visual Studio
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 <br />
 
-
+<br />
 ## Getting Started
 <br />
 Para executar a aplicação, siga estes passos:
@@ -59,7 +59,7 @@ Para executar a aplicação, siga estes passos:
    ```sh
    [https://visualstudio.microsoft.com/pt-br/downloads/](https://visualstudio.microsoft.com/pt-br/downloads/)
    ```
-
+   <br />
 2. Clone o repositório do GitHub para a sua máquina local
    ```sh
    https://github.com/Goncalo1603/PSI_DA_PL1-D
@@ -68,7 +68,7 @@ Para executar a aplicação, siga estes passos:
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
-
+<br />
 ## Uso
 <br />
 A aplicação dispõe de vários formulários para gerir diferentes entidades:
