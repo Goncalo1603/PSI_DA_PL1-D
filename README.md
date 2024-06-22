@@ -58,7 +58,7 @@ Para executar a aplicação, siga estes passos:
 
 1. Instale o Visual Studio em
    ```sh
-   [https://visualstudio.microsoft.com/pt-br/downloads/](https://visualstudio.microsoft.com/pt-br/downloads/)
+   https://visualstudio.microsoft.com/pt-br/downloads
    ```
 
 2. Clone o repositório do GitHub para a sua máquina local
