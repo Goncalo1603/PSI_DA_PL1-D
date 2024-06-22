@@ -139,5 +139,5 @@ Link do Projeto: [https://github.com/Goncalo1603/PSI_DA_PL1-D/branches](https://
 
 
 
-[visualstudio.microsoft.com]: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRR3eevUzRX9TPm1Dng2YruzldXRpJgKspeA&s
+[visualstudio.microsoft.com]: https://p.kindpng.com/picc/s/13-131087_visual-studio-2019-official-logo-visual-studio-2010.png
 [VisualStudio-url]: visualstudio.microsoft.com
