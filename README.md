@@ -3,7 +3,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/Goncalo1603/PSI_DA_PL1-D">
     <img src="images/images.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -33,34 +33,34 @@
 
 
 ## Sobre o Projeto
-
+<br />
 A finalidade deste projeto é desenvolver uma aplicação em C# no Visual Studio para administrar uma cantina escolar, com o objetivo de aprimorar a gestão dos menus, reservas, saldo e faturação. O propósito principal é melhorar a administração de menus, como pratos e extras, com restrição de um prato por dia e até três extras, monitorizar o saldo dos clientes, ver os menus semanalmente, criar e administrar funcionários e clientes, e assegurar a persistência dos dados numa base de dados SQL.
-
+<br />
 <p align="right">(<a href="#readme-top"> voltar ao topo</a>)</p>
 <br />
 
 
 
 ### Built With
-
-* [![Visual Studio][visualstudio.microsoft.com]][Visual Studio-url]
-
+<br />
+[![Visual Studio][visualstudio.microsoft.com]][Visual Studio-url]
+<br />
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 <br />
 
 
 ## Getting Started
-
+<br />
 Para executar a aplicação, siga estes passos:
-
-### Instalacao
-
+<br />
+### Instalação
+<br />
 1. Instale o Visual Studio em
    ```sh
    [https://visualstudio.microsoft.com/pt-br/downloads/](https://visualstudio.microsoft.com/pt-br/downloads/)
    ```
 
-3. Clone o repositório do GitHub para a sua máquina local
+2. Clone o repositório do GitHub para a sua máquina local
    ```sh
    https://github.com/Goncalo1603/PSI_DA_PL1-D
    ```
@@ -94,12 +94,11 @@ A aplicação dispõe de vários formulários para gerir diferentes entidades:
   <br />
   reservas: Para gerir reservas
 <br />
-<br />
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
-## Execucao
+## Execução
 <br />
 Para executar a aplicação, siga estes passos:
 <br />
@@ -107,6 +106,8 @@ Para executar a aplicação, siga estes passos:
    <br />
 3. Prima F5 para executar a aplicação
    <br />
+   
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
 
