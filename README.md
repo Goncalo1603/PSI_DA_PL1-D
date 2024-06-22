@@ -107,7 +107,7 @@ Para executar a aplicação, siga estes passos:
 1. Defina o projeto como projeto de inicialização no menu ao abrir o Visual Studio
    <br />
      <br />
-3. Prima F5 para executar a aplicação
+2. Prima F5 para executar a aplicação
    <br />
    
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
