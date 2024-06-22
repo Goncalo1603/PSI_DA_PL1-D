@@ -3,16 +3,22 @@
   "WorkspaceRootPath": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A354610-C2CC-4A8D-B60E-D5C0EED0BF44}|Projeto.csproj|\\\\mac\\home\\documents\\github\\psi_da_pl1-d\\projeto\\view\\extras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A354610-C2CC-4A8D-B60E-D5C0EED0BF44}|Projeto.csproj|\\\\mac\\home\\documents\\github\\psi_da_pl1-d\\projeto\\view\\reservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A354610-C2CC-4A8D-B60E-D5C0EED0BF44}|Projeto.csproj|\\\\mac\\home\\documents\\github\\psi_da_pl1-d\\projeto\\view\\extras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9A354610-C2CC-4A8D-B60E-D5C0EED0BF44}|Projeto.csproj|\\\\mac\\home\\documents\\github\\psi_da_pl1-d\\projeto\\view\\reservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A354610-C2CC-4A8D-B60E-D5C0EED0BF44}|Projeto.csproj|\\\\mac\\home\\documents\\github\\psi_da_pl1-d\\projeto\\view\\pratos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A354610-C2CC-4A8D-B60E-D5C0EED0BF44}|Projeto.csproj|\\\\mac\\home\\documents\\github\\psi_da_pl1-d\\projeto\\view\\pratos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A354610-C2CC-4A8D-B60E-D5C0EED0BF44}|Projeto.csproj|\\\\mac\\home\\documents\\github\\psi_da_pl1-d\\projeto\\view\\multas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A354610-C2CC-4A8D-B60E-D5C0EED0BF44}|Projeto.csproj|\\\\mac\\home\\documents\\github\\psi_da_pl1-d\\projeto\\view\\multas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +33,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "extras.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\extras.cs",
-              "RelativeDocumentMoniker": "view\\extras.cs",
-              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\extras.cs",
-              "RelativeToolTip": "view\\extras.cs",
-              "ViewState": "AQIAADIAAABgZmZmZqYpwDQAAAAMAAAA",
+              "Title": "reservas.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\reservas.cs",
+              "RelativeDocumentMoniker": "view\\reservas.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\reservas.cs*",
+              "RelativeToolTip": "view\\reservas.cs*",
+              "ViewState": "AQIAADEAAABAzczMzMwUwEkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T11:40:54.392Z",
+              "WhenOpened": "2024-06-19T22:29:02.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "extras.cs [Design]",
-              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\extras.cs",
-              "RelativeDocumentMoniker": "view\\extras.cs",
-              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\extras.cs [Design]",
-              "RelativeToolTip": "view\\extras.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "multas.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\multas.cs",
+              "RelativeDocumentMoniker": "view\\multas.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\multas.cs*",
+              "RelativeToolTip": "view\\multas.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T11:40:51.146Z",
+              "WhenOpened": "2024-06-19T22:26:57.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "multas.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\multas.cs",
+              "RelativeDocumentMoniker": "view\\multas.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\multas.cs [Design]*",
+              "RelativeToolTip": "view\\multas.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T22:26:52.05Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "pratos.cs",
-              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\pratos.cs",
-              "RelativeDocumentMoniker": "view\\pratos.cs",
-              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\pratos.cs",
-              "RelativeToolTip": "view\\pratos.cs",
-              "ViewState": "AQIAADoAAAAAzszMzMwLwDAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "reservas.cs [Design]",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\reservas.cs",
+              "RelativeDocumentMoniker": "view\\reservas.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\reservas.cs [Design]*",
+              "RelativeToolTip": "view\\reservas.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T11:39:47.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T17:34:01.964Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -73,6 +91,19 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T00:46:15.101Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "pratos.cs",
+              "DocumentMoniker": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\pratos.cs",
+              "RelativeDocumentMoniker": "view\\pratos.cs",
+              "ToolTip": "\\\\Mac\\Home\\Documents\\GitHub\\PSI_DA_PL1-D\\Projeto\\view\\pratos.cs",
+              "RelativeToolTip": "view\\pratos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T11:39:47.704Z",
+              "EditorCaption": ""
             }
           ]
         }
