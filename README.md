@@ -132,7 +132,7 @@ Membros do grupo:
   
   
 
-Link do Projeto: [https://github.com/Goncalo1603/PSI_DA_PL1-D/branches](https://github.com/Goncalo1603/PSI_DA_PL1-D)
+Link do Projeto: [https://github.com/Goncalo1603/PSI_DA_PL1-D](https://github.com/Goncalo1603/PSI_DA_PL1-D)
 <br />
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
