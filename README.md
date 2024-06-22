@@ -37,6 +37,7 @@
 A finalidade deste projeto é desenvolver uma aplicação em C# no Visual Studio para administrar uma cantina escolar, com o objetivo de aprimorar a gestão dos menus, reservas, saldo e faturação. O propósito principal é melhorar a administração de menus, como pratos e extras, com restrição de um prato por dia e até três extras, monitorizar o saldo dos clientes, ver os menus semanalmente, criar e administrar funcionários e clientes, e assegurar a persistência dos dados numa base de dados SQL.
 
 <p align="right">(<a href="#readme-top"> voltar ao topo</a>)</p>
+<br />
 
 
 
@@ -45,7 +46,7 @@ A finalidade deste projeto é desenvolver uma aplicação em C# no Visual Studio
 * [![Visual Studio][visualstudio.microsoft.com]][Visual Studio-url]
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
-
+<br />
 
 
 ## Getting Started
@@ -53,12 +54,17 @@ A finalidade deste projeto é desenvolver uma aplicação em C# no Visual Studio
 Para executar a aplicação, siga estes passos:
 
 ### Instalacao
-
-1. Instale o Visual Studio em [https://visualstudio.microsoft.com/pt-br/downloads/](https://visualstudio.microsoft.com/pt-br/downloads/)
-2. Clone o repositório do GitHub para a sua máquina local
+<br />
+1. Instale o Visual Studio em
+   ```sh
+   [https://visualstudio.microsoft.com/pt-br/downloads/](https://visualstudio.microsoft.com/pt-br/downloads/)
+   ```
+   <br />
+3. Clone o repositório do GitHub para a sua máquina local
    ```sh
    https://github.com/Goncalo1603/PSI_DA_PL1-D
    ```
+   <br />
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
@@ -67,13 +73,19 @@ Para executar a aplicação, siga estes passos:
 ## Uso
 
 A aplicação dispõe de vários formulários para gerir diferentes entidades:
-
+<br />
   Form1: O formulário principal para navegar para outros formulários
+  <br />
   funcionarios: Para gerir funcionários
+  <br />
   clientes: Para gerir clientes
+  <br />
   extras: Para gerir extras
+  <br />
   pratos: Para gerir pratos
+  <br />
   multas: Para gerir multas
+  <br />
   reservas: Para gerir reservas
 
 
@@ -83,27 +95,32 @@ A aplicação dispõe de vários formulários para gerir diferentes entidades:
 ## Execucao
 
 Para executar a aplicação, siga estes passos:
-
+<br />
 1. Defina o projeto como projeto de inicialização no menu ao abrir o Visual Studio
-2. rima F5 para executar a aplicação
+   <br />
+3. Prima F5 para executar a aplicação
+   <br />
 
 
 
 ## Contactos
 
 Projeto elaborado pelo grupo D da PL1, TeSP PSI Diurno 2023/2024
-
-Membros do grupo;
-
+<br />
+Membros do grupo:
+<br />
   Gonçalo Caldeira 2231687
+  <br />
   Isabel Costa 2231698
+  <br />
   Tiago Justino 2231677
+  <br />
   
   
   
 
 Link do Projeto: [https://github.com/Goncalo1603/PSI_DA_PL1-D/branches](https://github.com/Goncalo1603/PSI_DA_PL1-D/branches)
-
+<br />
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
