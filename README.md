@@ -103,8 +103,10 @@ A aplicação dispõe de vários formulários para gerir diferentes entidades:
 <br />
 Para executar a aplicação, siga estes passos:
 <br />
+  <br />
 1. Defina o projeto como projeto de inicialização no menu ao abrir o Visual Studio
    <br />
+     <br />
 3. Prima F5 para executar a aplicação
    <br />
    
