@@ -53,7 +53,9 @@ A finalidade deste projeto é desenvolver uma aplicação em C# no Visual Studio
 <br />
 Para executar a aplicação, siga estes passos:
 <br />
-### Instalação
+
+
+### Instalacao
 <br />
 1. Instale o Visual Studio em
    ```sh
@@ -98,7 +100,7 @@ A aplicação dispõe de vários formulários para gerir diferentes entidades:
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
-## Execução
+## Execucao
 <br />
 Para executar a aplicação, siga estes passos:
 <br />
