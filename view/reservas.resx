@@ -118,6 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+<<<<<<< Updated upstream
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAYABgAAD/4QC+RXhpZgAATU0AKgAAAAgABgESAAMAAAABAAEAAAEaAAUAAAAB
@@ -157,6 +158,8 @@
         CZy/7mJLN9zpDRo1pJLggaNGjVB//9k=
 </value>
   </data>
+=======
+>>>>>>> Stashed changes
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAYABgAAD/4QC+RXhpZgAATU0AKgAAAAgABgESAAMAAAABAAEAAAEaAAUAAAAB
@@ -196,4 +199,46 @@
         CZy/7mJLN9zpDRo1pJLggaNGjVB//9k=
 </value>
   </data>
+<<<<<<< Updated upstream
+=======
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        CZy/7mJLN9zpDRo1pJLggaNGjVB//9k=
+</value>
+  </data>
+>>>>>>> Stashed changes
 </root>

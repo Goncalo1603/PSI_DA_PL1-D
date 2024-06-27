@@ -1,6 +1,10 @@
 ﻿using Projeto.modelos;
 using System;
 using System.Collections.Generic;
+<<<<<<< Updated upstream
+=======
+using System.Data.Entity;
+>>>>>>> Stashed changes
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +14,7 @@ namespace Projeto.controller
 {
     internal class maincontroller
     {
+<<<<<<< Updated upstream
         private ExtraController _extracontroller;
         private pratocontroller _pratocontroller;
         private ReservaController _reservacontroller;
@@ -95,6 +100,170 @@ namespace Projeto.controller
         public List<Reserva> GetAllReservas()
         {
             return _reservacontroller.GetAllReservas();
+=======
+        public void InserirFuncionario(funcionario funcionario)
+        {
+            using (var db = new ProjetoContext())
+            {
+                db.utilizadores.Add(funcionario);
+                db.SaveChanges();
+            }
+        }
+
+        public List<funcionario> ObterFuncionarios()
+        {
+            using (var db = new ProjetoContext())
+            {
+                return db.funcionarios.ToList();
+            }
+        }
+
+        public void RemoverFuncionario(funcionario funcionario)
+        {
+            using (var db = new ProjetoContext())
+            {
+                db.Entry(funcionario).State = EntityState.Deleted;
+                db.SaveChanges();
+            }
+        }
+
+
+        public void AdicionarUtilizador(utilizador utilizador)
+        {
+            using (var db = new ProjetoContext())
+            {
+                db.utilizadores.Add(utilizador);
+                db.SaveChanges();
+            }
+        }
+
+        public void RemoverUtilizador(utilizador utilizador)
+        {
+            using (var db = new ProjetoContext())
+            {
+                db.Entry(utilizador).State = EntityState.Deleted;
+                db.SaveChanges();
+            }
+        }
+
+        public List<utilizador> Obterclientes()
+        {
+            using (var db = new ProjetoContext())
+            {
+                return db.utilizadores.ToList();
+            }
+        }
+
+
+        public void AdicionarPrato(prato prato)
+        {
+            using (var db = new ProjetoContext())
+            {
+                db.pratos.Add(prato);
+                db.SaveChanges();
+            }
+        }
+
+        public List<prato> ObterPratos()
+        {
+            using (var db = new ProjetoContext())
+            {
+                return db.pratos.ToList();
+            }
+        }
+
+        public void RemoverPrato(prato prato)
+        {
+            using (var db = new ProjetoContext())
+            {
+                db.Entry(prato).State = EntityState.Deleted;
+                db.SaveChanges();
+            }
+        }
+
+
+
+        public void AdicionarExtra(extra extra)
+        {
+            using (var db = new ProjetoContext())
+            {
+                db.extras.Add(extra);
+                db.SaveChanges();
+            }
+        }
+
+        public List<extra> ObterExtras()
+        {
+            using (var db = new ProjetoContext())
+            {
+                return db.extras.ToList();
+            }
+        }
+
+        public void RemoverExtra(extra extra)
+        {
+            using (var db = new ProjetoContext())
+            {
+                db.Entry(extra).State = EntityState.Deleted;
+                db.SaveChanges();
+            }
+        }
+
+
+        public List<menu> ObterMenus()
+        {
+            using (var context = new ProjetoContext())
+            {
+                return context.menus
+                    .Include(m => m.pratos)
+                    .Include(m => m.extras)
+                    .ToList();
+            }
+        }
+        public void InserirMenu(menu menu)
+        {
+            using (var db = new ProjetoContext())
+            {
+                db.menus.Add(menu);
+                db.SaveChanges();
+            }
+        }
+        public void RemoverMenu(menu menu)
+        {
+            using (var db = new ProjetoContext())
+            {
+                db.Entry(menu).State = EntityState.Deleted;
+                db.SaveChanges();
+            }
+        }
+
+
+        public void InserirMulta(multa multa)
+        {
+            using (var db = new ProjetoContext())
+            {
+                db.multas.Add(multa);
+                db.SaveChanges();
+            }
+        }
+
+        public List<multa> ObterMultas()
+        {
+            using (var db = new ProjetoContext())
+            {
+                return db.multas.ToList();
+            }
+        }
+        public void RemoverMulta(multa multa)
+        {
+            using (var db = new ProjetoContext())
+            {
+                db.Entry(multa).State = EntityState.Deleted;
+                db.SaveChanges();
+            }
+
+
+>>>>>>> Stashed changes
         }
     }
 }

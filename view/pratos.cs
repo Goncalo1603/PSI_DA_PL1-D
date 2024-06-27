@@ -4,9 +4,13 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+<<<<<<< Updated upstream
 using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
+=======
+using System.Drawing;
+>>>>>>> Stashed changes
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +20,7 @@ namespace Projeto.view
 {
     public partial class pratos : Form
     {
+<<<<<<< Updated upstream
         private pratocontroller _pratocontroller;
         public pratos()
         {
@@ -88,11 +93,67 @@ namespace Projeto.view
         }
 
         private void buttonadicionar_Click(object sender, EventArgs e)
+=======
+        private pratocontroller _pratoController;
+        private maincontroller _mainController;
+        public pratos()
+        {
+            InitializeComponent();
+            InicializarControladores();
+            CarregarPratos();
+        }
+
+        private void InicializarControladores()
+        {
+            _mainController = new maincontroller();
+            _pratoController = new pratocontroller(_mainController);
+        }
+
+        private void CarregarPratos()
+        {
+            try
+            {
+                if (_mainController != null)
+                {
+                    List<prato> pratos = _mainController.ObterPratos();
+
+                    listBoxPratos.Items.Clear();
+
+                    foreach (var prato in pratos)
+                    {
+                        listBoxPratos.Items.Add($"{prato.descricao}");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao carregar Pratos: PrincipalController é null.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao carregar Pratos: {ex.Message}");
+            }
+        }
+
+        private void buttonCarregarPratos_Click(object sender, EventArgs e)
+        {
+            groupBox1.Show();
+            CarregarPratos();
+        }
+
+        private void pictureBoxICantina_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void buttonAdicionarNovoPrato_Click(object sender, EventArgs e)
+>>>>>>> Stashed changes
         {
             string descricao = textBoxDescricaoNovoPrato.Text;
             string tipo = textBoxTipoNovoPrato.Text;
             string ativo = textBoxAtivoNovoPrato.Text;
 
+<<<<<<< Updated upstream
             if (ativo == "Sim" || ativo == "Não")
             {
                 prato novoPrato = new prato
@@ -233,10 +294,16 @@ namespace Projeto.view
         private void label2_Click_1(object sender, EventArgs e)
         {
 
+=======
+            _pratoController.AdicionarPrato(descricao, tipo, ativo);
+            MessageBox.Show("Prato adicionado com sucesso!");
+            CarregarPratos();
+>>>>>>> Stashed changes
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< Updated upstream
 
         }
 
@@ -253,6 +320,37 @@ namespace Projeto.view
         private void textBoxAtivoAtualizarPrato_TextChanged(object sender, EventArgs e)
         {
 
+=======
+            Form1 func = new Form1();
+            func.Show();
+            this.Hide();
+        }
+
+        private void buttonEliminarPratos_Click(object sender, EventArgs e)
+        {
+            if (listBoxPratos.SelectedItem != null)
+            {
+                string pratoselecionado = listBoxPratos.SelectedItem.ToString();
+                string[] detalhesprato = pratoselecionado.Split('-');
+
+           
+                string nome = detalhesprato[0].Trim();
+
+                
+                prato prato = _mainController.ObterPratos().FirstOrDefault(f => f.descricao == nome);
+
+                if (prato != null)
+                {
+                    _mainController.RemoverPrato(prato);
+                    MessageBox.Show("Prato removido com sucesso!");
+                    CarregarPratos(); 
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nenhum Prato selecionado para remover.");
+            }
+>>>>>>> Stashed changes
         }
     }
 }

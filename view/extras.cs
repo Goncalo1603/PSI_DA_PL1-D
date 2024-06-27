@@ -5,7 +5,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+<<<<<<< Updated upstream
 using System.IO;
+=======
+>>>>>>> Stashed changes
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +18,7 @@ namespace Projeto.view
 {
     public partial class extras : Form
     {
+<<<<<<< Updated upstream
 
         private ExtraController _extracontroller;
         public extras()
@@ -45,11 +49,92 @@ namespace Projeto.view
             foreach (extra extra in extras)
             {
                 listBoxExtras.Items.Add($"{extra.descricao} - {extra.preco} - {extra.ativo}");
+=======
+        private extracontroller _extraController;
+        private maincontroller _mainController;
+
+        public extras()
+        {
+            InitializeComponent();
+            InicializarControladores();
+            CarregarExtras();
+
+        }
+
+        private void InicializarControladores()
+        {
+            _mainController = new maincontroller();
+            _extraController = new extracontroller(_mainController);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 func = new Form1();
+            func.Show();
+            this.Hide();
+        }
+
+        private void buttonCarregarExtras_Click(object sender, EventArgs e)
+        {
+            groupBox1.Show();
+        }
+
+        private void CarregarExtras()
+        {
+            try
+            {
+                if (_mainController != null)
+                {
+                    List<extra> extras = _mainController.ObterExtras();
+
+                    listBoxExtras.Items.Clear();
+
+                    foreach (var extra in extras)
+                    {
+                        listBoxExtras.Items.Add($"{extra.descricao}");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao carregar Extras: PrincipalController é null.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao carregar Extras: {ex.Message}");
+            }
+        }
+
+        private void buttonEliminarExtras_Click(object sender, EventArgs e)
+        {
+            if (listBoxExtras.SelectedItem != null)
+            {
+                string extraselecionado = listBoxExtras.SelectedItem.ToString();
+                string[] detalhesextra = extraselecionado.Split('-');
+
+
+                string nome = detalhesextra[0].Trim();
+
+
+                extra extra = _mainController.ObterExtras().FirstOrDefault(f => f.descricao == nome);
+
+                if (extra != null)
+                {
+                    _mainController.RemoverExtra(extra);
+                    MessageBox.Show("Extra removido com sucesso!");
+                    CarregarExtras();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nenhum Extra selecionado para remover.");
+>>>>>>> Stashed changes
             }
         }
 
         private void buttonAdicionarNovoExtra_Click(object sender, EventArgs e)
         {
+<<<<<<< Updated upstream
             string descricao = textBoxDescricaoNovoExtra.Text;
             float preco = float.Parse(textBoxPrecoNovoExtra.Text);
             string ativo = textBoxAtivoNovoExtra.Text;
@@ -183,6 +268,26 @@ namespace Projeto.view
         private void textBoxAtivoAtualizarExtra_TextChanged(object sender, EventArgs e)
         {
 
+=======
+            groupBox1.Visible = true;
+
+            string descricao = textBoxDescricaoNovoExtra.Text;
+            float preco = 0;
+            string ativo = textBoxAtivoNovoExtra.Text;
+
+            if (float.TryParse(textBoxPrecoNovoExtra.Text, out preco))
+            {
+                _extraController.AdicionarExtra(descricao, preco, ativo);
+                MessageBox.Show("Extra adicionado com sucesso!");
+                CarregarExtras();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, insira um valor válido para o preço.");
+            }
+
+           
+>>>>>>> Stashed changes
         }
     }
 }

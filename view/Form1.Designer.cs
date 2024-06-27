@@ -33,6 +33,10 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+<<<<<<< Updated upstream
+=======
+            this.button1 = new System.Windows.Forms.Button();
+>>>>>>> Stashed changes
             this.buttonfuncionarios = new System.Windows.Forms.Button();
             this.buttonclientes = new System.Windows.Forms.Button();
             this.buttonreservas = new System.Windows.Forms.Button();
@@ -40,11 +44,18 @@
             this.buttonmenu = new System.Windows.Forms.Button();
             this.buttonextras = new System.Windows.Forms.Button();
             this.buttonpratos = new System.Windows.Forms.Button();
+<<<<<<< Updated upstream
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+=======
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+>>>>>>> Stashed changes
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -100,6 +111,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Menu de Gestão";
             // 
+<<<<<<< Updated upstream
+=======
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(7, 328);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(127, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Sair";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+>>>>>>> Stashed changes
             // buttonfuncionarios
             // 
             this.buttonfuncionarios.Location = new System.Drawing.Point(7, 288);
@@ -118,6 +142,10 @@
             this.buttonclientes.TabIndex = 4;
             this.buttonclientes.Text = "Clientes";
             this.buttonclientes.UseVisualStyleBackColor = true;
+<<<<<<< Updated upstream
+=======
+            this.buttonclientes.Click += new System.EventHandler(this.buttonclientes_Click);
+>>>>>>> Stashed changes
             // 
             // buttonreservas
             // 
@@ -127,6 +155,10 @@
             this.buttonreservas.TabIndex = 4;
             this.buttonreservas.Text = "Reservas";
             this.buttonreservas.UseVisualStyleBackColor = true;
+<<<<<<< Updated upstream
+=======
+            this.buttonreservas.Click += new System.EventHandler(this.buttonreservas_Click);
+>>>>>>> Stashed changes
             // 
             // buttonmultas
             // 
@@ -136,6 +168,10 @@
             this.buttonmultas.TabIndex = 3;
             this.buttonmultas.Text = "Multas";
             this.buttonmultas.UseVisualStyleBackColor = true;
+<<<<<<< Updated upstream
+=======
+            this.buttonmultas.Click += new System.EventHandler(this.buttonmultas_Click);
+>>>>>>> Stashed changes
             // 
             // buttonmenu
             // 
@@ -145,6 +181,10 @@
             this.buttonmenu.TabIndex = 2;
             this.buttonmenu.Text = "Menu";
             this.buttonmenu.UseVisualStyleBackColor = true;
+<<<<<<< Updated upstream
+=======
+            this.buttonmenu.Click += new System.EventHandler(this.buttonmenu_Click);
+>>>>>>> Stashed changes
             // 
             // buttonextras
             // 
@@ -154,6 +194,10 @@
             this.buttonextras.TabIndex = 1;
             this.buttonextras.Text = "Extras";
             this.buttonextras.UseVisualStyleBackColor = true;
+<<<<<<< Updated upstream
+=======
+            this.buttonextras.Click += new System.EventHandler(this.buttonextras_Click);
+>>>>>>> Stashed changes
             // 
             // buttonpratos
             // 
@@ -163,6 +207,7 @@
             this.buttonpratos.TabIndex = 0;
             this.buttonpratos.Text = "Pratos";
             this.buttonpratos.UseVisualStyleBackColor = true;
+<<<<<<< Updated upstream
             // 
             // dateTimePicker1
             // 
@@ -170,6 +215,9 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 4;
+=======
+            this.buttonpratos.Click += new System.EventHandler(this.buttonpratos_Click);
+>>>>>>> Stashed changes
             // 
             // groupBox2
             // 
@@ -193,12 +241,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
+<<<<<<< Updated upstream
             this.label2.Location = new System.Drawing.Point(327, 294);
+=======
+            this.label2.Location = new System.Drawing.Point(311, 232);
+>>>>>>> Stashed changes
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Selecione o dia:";
             // 
+<<<<<<< Updated upstream
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(7, 328);
@@ -208,15 +261,30 @@
             this.button1.Text = "Sair";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+=======
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(314, 254);
+            this.monthCalendar1.MaxSelectionCount = 1;
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 17;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+>>>>>>> Stashed changes
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(969, 565);
+<<<<<<< Updated upstream
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dateTimePicker1);
+=======
+            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.groupBox2);
+>>>>>>> Stashed changes
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -246,11 +314,18 @@
         private System.Windows.Forms.Button buttonmenu;
         private System.Windows.Forms.Button buttonextras;
         private System.Windows.Forms.Button buttonpratos;
+<<<<<<< Updated upstream
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+=======
+>>>>>>> Stashed changes
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
+<<<<<<< Updated upstream
+=======
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+>>>>>>> Stashed changes
     }
 }
 

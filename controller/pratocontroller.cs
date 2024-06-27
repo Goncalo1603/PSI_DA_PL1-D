@@ -1,17 +1,24 @@
 ﻿using Projeto.modelos;
 using System;
 using System.Collections.Generic;
+<<<<<<< Updated upstream
 using System.Data.Entity;
 using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+=======
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+>>>>>>> Stashed changes
 
 namespace Projeto.controller
 {
     internal class pratocontroller
     {
+<<<<<<< Updated upstream
         public List<prato> GetAllPratos()
         {
             using (var context = new ProjetoContext())
@@ -67,5 +74,26 @@ namespace Projeto.controller
                 listBoxPratos.Items.Add($"{prato.descricao} - {prato.tipo} - {prato.ativo}");
             }
         }*/
+=======
+        private readonly maincontroller _principalController;
+
+        public pratocontroller(maincontroller principalController)
+        {
+            _principalController = principalController ?? throw new ArgumentNullException(nameof(principalController));
+        }
+
+
+        public void AdicionarPrato(string descricao, string tipo, string ativo)
+        {
+            var prato = new prato
+            {
+                descricao = descricao,
+                tipo = tipo,
+                ativo = ativo
+            };
+
+            _principalController.AdicionarPrato(prato);
+        }
+>>>>>>> Stashed changes
     }
 }
