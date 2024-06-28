@@ -22,10 +22,10 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#instalacao">Instalação</a></li>
+        <li><a href="#uso">Uso</a></li>
+        <li><a href="#execucao">Execução</a></li>
       </ul>
     </li>
-    <li><a href="#uso">Uso</a></li>
-    <li><a href="#execucao">Execução</a></li>
     <li><a href="#contactos">Contactos</a></li>
   </ol>
 </details>
@@ -36,7 +36,7 @@
 
 A finalidade deste projeto é desenvolver uma aplicação em C# no Visual Studio para administrar uma cantina escolar, com o objetivo de aprimorar a gestão dos menus, reservas, saldo e faturação. O propósito principal é melhorar a administração de menus, como pratos e extras, com restrição de um prato por dia e até três extras, monitorizar o saldo dos clientes, ver os menus semanalmente, criar e administrar funcionários e clientes, e assegurar a persistência dos dados numa base de dados SQL.
 
-<p align="right">(<a href="#readme-top"> voltar ao topo</a>)</p>
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
 
