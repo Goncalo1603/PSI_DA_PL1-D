@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Goncalo1603/PSI_DA_PL1-D">
-    <img src="images/images.png" alt="Logo" width="80" height="80">
+    <img src="images/images.jpeg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Projeto DA e MDS - iCantina</h3>
