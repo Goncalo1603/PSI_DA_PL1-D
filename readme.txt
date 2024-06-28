@@ -24,6 +24,7 @@ Uso
 
 A aplicação dispõe de vários formulários para gerir diferentes entidades:
 
+<<<<<<< Updated upstream
 	Form1: O formulário principal para navegar para outros formulários.
     	funcionarios: Para gerir funcionários.
     	clientes: Para gerir clientes.
@@ -31,6 +32,15 @@ A aplicação dispõe de vários formulários para gerir diferentes entidades:
     	pratos: Para gerir pratos.
     	multas: Para gerir multas.
     	reservas: Para gerir reservas.
+=======
+	menuprincipal: O formulário principal para navegar para outros formulários.
+    funcionarios: Para gerir funcionários.
+    clientes: Para gerir clientes.
+    extras: Para gerir extras.
+    pratos: Para gerir pratos.
+    multas: Para gerir multas.
+    reservas: Para gerir reservas.
+>>>>>>> Stashed changes
 
 Membros do grupo
 

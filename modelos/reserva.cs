@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Projeto.modelos
 {
+<<<<<<< Updated upstream
     public class Reserva
+=======
+    public class reserva
+>>>>>>> Stashed changes
     {
         public int id { get; set; }
         public cliente cliente { get; set; } // uma reserva pertence a 1 cliente

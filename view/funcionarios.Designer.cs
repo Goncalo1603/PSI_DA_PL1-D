@@ -41,7 +41,10 @@
             this.labelusername = new System.Windows.Forms.Label();
             this.labelnifCliente = new System.Windows.Forms.Label();
             this.labelnomeCliente = new System.Windows.Forms.Label();
+<<<<<<< Updated upstream
             this.buttonatualizarCliente = new System.Windows.Forms.Button();
+=======
+>>>>>>> Stashed changes
             this.buttonapagarCliente = new System.Windows.Forms.Button();
             this.buttoncriarfuncionario = new System.Windows.Forms.Button();
             this.listBoxfuncionarios = new System.Windows.Forms.ListBox();
@@ -146,7 +149,10 @@
             this.groupBox1.Controls.Add(this.labelusername);
             this.groupBox1.Controls.Add(this.labelnifCliente);
             this.groupBox1.Controls.Add(this.labelnomeCliente);
+<<<<<<< Updated upstream
             this.groupBox1.Controls.Add(this.buttonatualizarCliente);
+=======
+>>>>>>> Stashed changes
             this.groupBox1.Controls.Add(this.buttonapagarCliente);
             this.groupBox1.Location = new System.Drawing.Point(196, 37);
             this.groupBox1.Name = "groupBox1";
@@ -186,6 +192,7 @@
             this.labelnomeCliente.TabIndex = 2;
             this.labelnomeCliente.Text = "Nome Funcionario";
             // 
+<<<<<<< Updated upstream
             // buttonatualizarCliente
             // 
             this.buttonatualizarCliente.BackColor = System.Drawing.Color.Blue;
@@ -197,16 +204,26 @@
             this.buttonatualizarCliente.Text = "Atualizar Informações";
             this.buttonatualizarCliente.UseVisualStyleBackColor = false;
             // 
+=======
+>>>>>>> Stashed changes
             // buttonapagarCliente
             // 
             this.buttonapagarCliente.BackColor = System.Drawing.Color.Blue;
             this.buttonapagarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+<<<<<<< Updated upstream
             this.buttonapagarCliente.Location = new System.Drawing.Point(635, 54);
+=======
+            this.buttonapagarCliente.Location = new System.Drawing.Point(635, 89);
+>>>>>>> Stashed changes
             this.buttonapagarCliente.Name = "buttonapagarCliente";
             this.buttonapagarCliente.Size = new System.Drawing.Size(120, 35);
             this.buttonapagarCliente.TabIndex = 0;
             this.buttonapagarCliente.Text = "Apagar";
             this.buttonapagarCliente.UseVisualStyleBackColor = false;
+<<<<<<< Updated upstream
+=======
+            this.buttonapagarCliente.Click += new System.EventHandler(this.buttonapagarCliente_Click);
+>>>>>>> Stashed changes
             // 
             // buttoncriarfuncionario
             // 
@@ -227,6 +244,10 @@
             this.listBoxfuncionarios.Name = "listBoxfuncionarios";
             this.listBoxfuncionarios.Size = new System.Drawing.Size(150, 394);
             this.listBoxfuncionarios.TabIndex = 6;
+<<<<<<< Updated upstream
+=======
+            this.listBoxfuncionarios.SelectedIndexChanged += new System.EventHandler(this.listBoxfuncionarios_SelectedIndexChanged);
+>>>>>>> Stashed changes
             // 
             // labelfuncionarios
             // 
@@ -288,7 +309,10 @@
         private System.Windows.Forms.Label labelusername;
         private System.Windows.Forms.Label labelnifCliente;
         private System.Windows.Forms.Label labelnomeCliente;
+<<<<<<< Updated upstream
         private System.Windows.Forms.Button buttonatualizarCliente;
+=======
+>>>>>>> Stashed changes
         private System.Windows.Forms.Button buttonapagarCliente;
         private System.Windows.Forms.Button buttoncriarfuncionario;
         private System.Windows.Forms.ListBox listBoxfuncionarios;

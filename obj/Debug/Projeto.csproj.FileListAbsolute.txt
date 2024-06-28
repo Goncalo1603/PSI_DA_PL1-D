@@ -18,6 +18,7 @@ C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\obj\Debug\Projeto.pdb
 C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\obj\Debug\Projeto.cliente.resources
 C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\obj\Debug\Projeto.funcionarios.resources
 C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\obj\Debug\Projeto.modelos.multas.resources
+<<<<<<< Updated upstream
 \\Mac\Home\Documents\GitHub\PSI_DA_PL1-D\Projeto\obj\Debug\Projeto.csproj.AssemblyReference.cache
 \\Mac\Home\Documents\GitHub\PSI_DA_PL1-D\Projeto\obj\Debug\Projeto.cliente.resources
 \\Mac\Home\Documents\GitHub\PSI_DA_PL1-D\Projeto\obj\Debug\Projeto.Form1.resources
@@ -67,3 +68,77 @@ D:\Escola\Belinha\DA\Projeto\bin\Debug\EntityFramework.SqlServer.dll
 D:\Escola\Belinha\DA\Projeto\bin\Debug\EntityFramework.xml
 D:\Escola\Belinha\DA\Projeto\bin\Debug\EntityFramework.SqlServer.xml
 D:\Escola\Belinha\DA\Projeto\obj\Debug\Projeto.csproj.Up2Date
+=======
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\bin\Debug\Database.mdf
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\bin\Debug\Database_log.ldf
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\bin\Debug\Projeto.exe.config
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\bin\Debug\Projeto.exe
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\bin\Debug\Projeto.pdb
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\bin\Debug\EntityFramework.dll
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\bin\Debug\EntityFramework.xml
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\obj\Debug\Projeto.csproj.AssemblyReference.cache
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\obj\Debug\Projeto.cliente.resources
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\obj\Debug\Projeto.Form1.resources
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\obj\Debug\Projeto.funcionarios.resources
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\obj\Debug\Projeto.Properties.Resources.resources
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\obj\Debug\Projeto.view.menu.resources
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\obj\Debug\Projeto.modelos.multas.resources
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\obj\Debug\Projeto.view.reservas.resources
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\obj\Debug\Projeto.csproj.GenerateResource.cache
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\obj\Debug\Projeto.csproj.CoreCompileInputs.cache
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\obj\Debug\Projeto.csproj.Up2Date
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\obj\Debug\Projeto.exe
+C:\Users\tigas\Desktop\Pastas Variadas\Ensino Superior\2º Semestre\DA\Projeto\obj\Debug\Projeto.pdb
+C:\Users\GONCALO\Downloads\Projeto\Projeto\obj\Debug\Projeto.csproj.AssemblyReference.cache
+C:\Users\GONCALO\Downloads\Projeto\Projeto\obj\Debug\Projeto.exe
+C:\Users\GONCALO\Downloads\Projeto\Projeto\obj\Debug\Projeto.pdb
+C:\Users\GONCALO\Downloads\Projeto\Projeto\bin\Debug\Database.mdf
+C:\Users\GONCALO\Downloads\Projeto\Projeto\bin\Debug\Database_log.ldf
+C:\Users\GONCALO\Downloads\Projeto\Projeto\bin\Debug\Projeto.exe.config
+C:\Users\GONCALO\Downloads\Projeto\Projeto\bin\Debug\Projeto.exe
+C:\Users\GONCALO\Downloads\Projeto\Projeto\bin\Debug\Projeto.pdb
+C:\Users\GONCALO\Downloads\Projeto\Projeto\bin\Debug\EntityFramework.dll
+C:\Users\GONCALO\Downloads\Projeto\Projeto\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\GONCALO\Downloads\Projeto\Projeto\bin\Debug\EntityFramework.xml
+C:\Users\GONCALO\Downloads\Projeto\Projeto\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\GONCALO\Downloads\Projeto\Projeto\obj\Debug\Projeto.cliente.resources
+C:\Users\GONCALO\Downloads\Projeto\Projeto\obj\Debug\Projeto.Form1.resources
+C:\Users\GONCALO\Downloads\Projeto\Projeto\obj\Debug\Projeto.funcionarios.resources
+C:\Users\GONCALO\Downloads\Projeto\Projeto\obj\Debug\Projeto.Properties.Resources.resources
+C:\Users\GONCALO\Downloads\Projeto\Projeto\obj\Debug\Projeto.view.menu.resources
+C:\Users\GONCALO\Downloads\Projeto\Projeto\obj\Debug\Projeto.modelos.multas.resources
+C:\Users\GONCALO\Downloads\Projeto\Projeto\obj\Debug\Projeto.reservas.resources
+C:\Users\GONCALO\Downloads\Projeto\Projeto\obj\Debug\Projeto.csproj.GenerateResource.cache
+C:\Users\GONCALO\Downloads\Projeto\Projeto\obj\Debug\Projeto.csproj.CoreCompileInputs.cache
+C:\Users\GONCALO\Downloads\Projeto\Projeto\obj\Debug\Projeto.csproj.Up2Date
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\bin\Debug\Database.mdf
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\bin\Debug\Database_log.ldf
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\bin\Debug\Projeto.exe.config
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\bin\Debug\Projeto.exe
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\bin\Debug\Projeto.pdb
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\bin\Debug\EntityFramework.dll
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\bin\Debug\EntityFramework.xml
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\obj\Debug\Projeto.csproj.AssemblyReference.cache
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\obj\Debug\Projeto.cliente.resources
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\obj\Debug\Projeto.Form1.resources
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\obj\Debug\Projeto.funcionarios.resources
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\obj\Debug\Projeto.Properties.Resources.resources
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\obj\Debug\Projeto.modelos.multas.resources
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\obj\Debug\Projeto.reservas.resources
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\obj\Debug\Projeto.csproj.GenerateResource.cache
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\obj\Debug\Projeto.csproj.CoreCompileInputs.cache
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\obj\Debug\Projeto.csproj.Up2Date
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\obj\Debug\Projeto.exe
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\obj\Debug\Projeto.pdb
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\obj\Debug\Projeto.view.pratos.resources
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\obj\Debug\Projeto.view.extras.resources
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\bin\Debug\itextsharp.dll
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\bin\Debug\itextsharp.xml
+C:\Users\GONCALO\Desktop\DA\Projeto\Projeto\Projeto\obj\Debug\Projeto.view.menus.resources
+>>>>>>> Stashed changes

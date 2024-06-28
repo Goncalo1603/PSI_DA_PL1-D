@@ -12,11 +12,19 @@ namespace Projeto.modelos
         public string descricao {  get; set; }
         public string tipo { get; set; }
         public string ativo { get; set; }
+<<<<<<< Updated upstream
         public List<Reserva>reservas {  get; set; } // 1 prato pode estar em varias reservas
         public List<menu>menus { get; set; } // 1 prato pode ter varios menus
         public prato() 
         {
             reservas = new List<Reserva>();
+=======
+        public List<reserva>reservas {  get; set; } // 1 prato pode estar em varias reservas
+        public List<menu>menus { get; set; } // 1 prato pode ter varios menus
+        public prato() 
+        {
+            reservas = new List<reserva>();
+>>>>>>> Stashed changes
             menus = new List<menu>();
         }
 

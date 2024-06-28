@@ -12,7 +12,11 @@ namespace Projeto.modelos
         public float saldo {  get; set; }
         public List<fatura> faturas { get; set; } // um cliente pode ter varias faturas
 
+<<<<<<< Updated upstream
         public List<Reserva>reservas { get; set; } // um cliente pode ter varias reservas
+=======
+        public List<reserva>reservas { get; set; } // um cliente pode ter varias reservas
+>>>>>>> Stashed changes
 
         public cliente()
         {
